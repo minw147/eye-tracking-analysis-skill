@@ -43,6 +43,7 @@ Invoke this skill when asked to:
 - `references/workflow.md` — full procedure for URL capture, region detection, multi-image handling, PDF export, and file-naming conventions
 - `references/report-format.md` — metric-interpretation rules and the exact report section structure/formatting
 - `references/reading-patterns.md` — F-pattern, Z-pattern, Gutenberg diagram, and layer-cake scanning research (NN/G), used to ground the Sequence Report in real UX literature instead of raw saliency numbers alone
+- `references/algorithm.md` — how Spectral Residual Saliency actually computes the heatmap, clarity score, and attention share, plus the original Hou & Zhang (2007) citation
 
 ## Setup
 
@@ -51,6 +52,10 @@ pip install opencv-contrib-python selenium webdriver-manager markdown xhtml2pdf
 ```
 
 `assets/heatmap_legend.png` is copied automatically into each output directory by the analysis script.
+
+## Scientific Foundation
+
+Spectral Residual Saliency originates from Hou, X., & Zhang, L. (2007), *Saliency Detection: A Spectral Residual Approach*, IEEE CVPR 2007, pp. 1-8. Full math, our enhancements (face-boost, clarity score), and citation/BibTeX are in `references/algorithm.md`; the complete write-up (with related work and limitations) is published at [heatmap.mintleafux.com/SPECTRAL_RESIDUAL_EXPLANATION.html](https://heatmap.mintleafux.com/SPECTRAL_RESIDUAL_EXPLANATION.html).
 
 ## Troubleshooting
 

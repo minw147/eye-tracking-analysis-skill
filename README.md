@@ -10,6 +10,8 @@ Given an image, it generates:
 - Automatically **detected attention zones** with percentage share of total visual "heat"
 - A full written report with specific, actionable design recommendations
 
+Based on Hou, X., & Zhang, L. (2007), *Saliency Detection: A Spectral Residual Approach*, IEEE CVPR 2007 — see [references/algorithm.md](./references/algorithm.md) for the math and citation, or the [full technical write-up](https://heatmap.mintleafux.com/SPECTRAL_RESIDUAL_EXPLANATION.html).
+
 ## Try it first
 
 Before installing anything, see it in action: **[live demo](https://heatmap.mintleafux.com)** — upload a screenshot and get a heatmap + a ready-made prompt for the full report, entirely in your browser, nothing uploaded or stored.
@@ -47,6 +49,7 @@ It also supports URL capture, multi-image comparison, A/B testing two designs, a
 - `references/workflow.md` — detailed procedure for URL capture, region detection, multi-image handling, PDF export, and file naming
 - `references/report-format.md` — metric-interpretation rules and the exact report structure
 - `references/reading-patterns.md` — F-pattern, Z-pattern, Gutenberg diagram, and layer-cake scanning research (Nielsen Norman Group), used to ground the fixation narrative in real UX literature
+- `references/algorithm.md` — the Spectral Residual math, our enhancements (face-boost, clarity score), and the original citation
 - `assets/heatmap_legend.png` — the color-scale legend embedded in generated reports
 
 ## License
