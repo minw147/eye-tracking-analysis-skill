@@ -11,7 +11,9 @@ Never invent scores — use only the values in `saliency_metrics.json`.
 
 **Attention Share %** — exact percentage of total visual "heat" inside a region (`auto_detected_zones` or `goal_boxes`). Report the number exactly; never round to "High"/"Low" in place of the figure.
 
-**Fixation Order** (`fixation_order` array) — algorithmically-computed sequence via Winner-Take-All + distance penalties + reading-pattern bias + inhibition-of-return. Use as the baseline; adjust order slightly only when semantic importance clearly overrides raw saliency (e.g. a CTA button should come earlier), and say so explicitly when doing so.
+**Fixation Order** (`fixation_order` array) — algorithmically-computed sequence via Winner-Take-All + distance penalties + reading-pattern bias + inhibition-of-return. Use as the baseline; adjust order slightly only when semantic importance clearly overrides raw saliency (e.g. a CTA button should come earlier), and say so explicitly when doing so — see the **Hierarchy Correction Rule** below for the one specific, named case where this applies.
+
+**Hierarchy Correction Rule (Size Dominance Over Edge Density)**: small, high-contrast text (e.g. a tight promotional caption) often scores a higher raw saliency peak than a much larger element nearby, because tightly-kerned edges create strong edge density — a known artifact of spectral-residual saliency, not a reflection of what a human actually looks at first. When a fixation's raw peak lands on a small element that sits in the same visual field as a substantially larger one (roughly 10x+ area difference), state explicitly that you're applying this rule, name both elements and their approximate sizes, and reassign the larger element as the more plausible fixation — human vision prioritizes size/prominence in the foveal capture range over pure contrast. Never apply this silently; always name it as an explicit override of the raw algorithmic order.
 
 **Confidence Level** (mapped from `max_saliency_peak`, 0-255):
 - Peak > 200 → **High** (95%) — sharp focal point
