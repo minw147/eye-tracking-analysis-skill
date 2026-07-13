@@ -46,6 +46,7 @@ It also supports URL capture, multi-image comparison, A/B testing two designs, a
 - `scripts/` — the Python pipeline (saliency computation, region detection, URL capture, PDF export)
 - `references/workflow.md` — detailed procedure for URL capture, region detection, multi-image handling, PDF export, and file naming
 - `references/report-format.md` — metric-interpretation rules and the exact report structure
+- `references/reading-patterns.md` — F-pattern, Z-pattern, Gutenberg diagram, and layer-cake scanning research (Nielsen Norman Group), used to ground the fixation narrative in real UX literature
 - `assets/heatmap_legend.png` — the color-scale legend embedded in generated reports
 
 ## License

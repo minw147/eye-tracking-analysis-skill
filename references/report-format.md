@@ -38,10 +38,12 @@ Embed `![Saliency Heatmap](heatmap_output_<name>.png)` and `![Heatmap Legend](as
 
 ### 3. Sequence Report (Narrative)
 
+Before narrating fixations, classify the layout's scanning pattern (F-pattern, Z-pattern, Gutenberg diagram, or layer-cake — see `references/reading-patterns.md`) and state it in one opening line. Use the named pattern's known hot zones to reinforce or challenge the algorithmic order, not just raw saliency numbers in isolation.
+
 For each fixation in `fixation_order` (typically 3-5):
 1. **Position in sequence** (First/Second/... Fixation): name the element at that `position`.
    - *Algorithmic basis*: position `[x, y]`, saliency value.
-   - *Reasoning*: why the eye lands/moves here — combine the algorithmic basis (distance, saliency) with semantic reasoning (what the element is, why it matters). Note explicitly if diverging from raw algorithmic order per the Fixation Order rule above.
+   - *Reasoning*: why the eye lands/moves here — combine the algorithmic basis (distance, saliency), the identified scanning pattern (`references/reading-patterns.md`), and semantic reasoning (what the element is, why it matters). Note explicitly if diverging from raw algorithmic order per the Fixation Order rule above.
 
 ### 4. Regions of Interest (only if `goal_boxes` present)
 

@@ -42,6 +42,7 @@ Invoke this skill when asked to:
 
 - `references/workflow.md` — full procedure for URL capture, region detection, multi-image handling, PDF export, and file-naming conventions
 - `references/report-format.md` — metric-interpretation rules and the exact report section structure/formatting
+- `references/reading-patterns.md` — F-pattern, Z-pattern, Gutenberg diagram, and layer-cake scanning research (NN/G), used to ground the Sequence Report in real UX literature instead of raw saliency numbers alone
 
 ## Setup
 
