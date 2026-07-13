@@ -38,13 +38,14 @@ Once installed, invoke it in a Claude Code conversation:
 Run the eye tracking analysis for this image: [attach image]
 ```
 
-It also supports URL capture, multi-image comparison, A/B testing two designs, and marked regions-of-interest for precise attention-share measurement. See [`SKILL.md`](./SKILL.md) for the full capability list and [`references/Eye_Tracking_Analysis_Prompt.md`](./references/Eye_Tracking_Analysis_Prompt.md) for the full analysis prompt and workflow details.
+It also supports URL capture, multi-image comparison, A/B testing two designs, and marked regions-of-interest for precise attention-share measurement. See [`SKILL.md`](./SKILL.md) for the full workflow.
 
 ## What's in this repo
 
-- `SKILL.md` — the skill definition Claude reads to know when and how to use this
+- `SKILL.md` — the skill definition: overview, when to use it, and the core workflow
 - `scripts/` — the Python pipeline (saliency computation, region detection, URL capture, PDF export)
-- `references/Eye_Tracking_Analysis_Prompt.md` — the full analysis prompt and workflow the skill follows
+- `references/workflow.md` — detailed procedure for URL capture, region detection, multi-image handling, PDF export, and file naming
+- `references/report-format.md` — metric-interpretation rules and the exact report structure
 - `assets/heatmap_legend.png` — the color-scale legend embedded in generated reports
 
 ## License
